@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Страница товара</title>
+    <link rel="stylesheet" href="css/tailwind.css">
+</head>
+
+<body class="min-h-screen">
+    <header class="absolute inset-x-0 top-0 z-10 bg-linear-to-r from-brand-start to-brand-end py-3">
+        <div class="container mx-auto px-4">
+            <nav class="flex flex-col items-center gap-2 sm:flex-row sm:justify-between">
+                <a href="mainpage.html"
+                    class="flex items-center text-black no-underline transition-transform duration-100 hover:scale-110">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="black" class="size-8"
+                        viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                        <path
+                            d="M10 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0M8 4a4 4 0 0 0-4 4 .5.5 0 0 1-1 0 5 5 0 0 1 5-5 .5.5 0 0 1 0 1m4.5 3.5a.5.5 0 0 1 .5.5 5 5 0 0 1-5 5 .5.5 0 0 1 0-1 4 4 0 0 0 4-4 .5.5 0 0 1 .5-.5" />
+                    </svg>
+                    <p class="mx-1 text-2xl">CDWorld</p>
+                </a>
+                <div class="flex items-center gap-4 sm:gap-6">
+                    <a href="mainpage.html#about"
+                        class="text-black no-underline transition-transform duration-100 hover:scale-110">О нас</a>
+                    <a href="mainpage.html#advantages"
+                        class="text-black no-underline transition-transform duration-100 hover:scale-110">Преимущества</a>
+                    <a href="mainpage.html#catalog"
+                        class="text-black no-underline transition-transform duration-100 hover:scale-110">Каталог</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex min-h-screen flex-col justify-center px-4 pb-12 pt-28 sm:py-24">
+        <section class="container mx-auto">
+            <div class="grid grid-cols-1 gap-6 lg:grid-cols-2">
+                <div class="group relative block">
+                    <img src="img/Diamond Eyes.jpeg" alt="Обложка альбома Diamond Eyes"
+                        class="w-full rounded-card transition duration-200 group-hover:blur-sm">
+                    <button type="button"
+                        class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 cursor-pointer border-0 bg-transparent opacity-0 transition duration-300 group-hover:opacity-100 hover:scale-110"
+                        aria-label="Воспроизвести или поставить на паузу">
+                        <svg id="play_circle" xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="white"
+                            class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z" />
+                        </svg>
+                        <svg id="pause_circle" xmlns="http://www.w3.org/2000/svg" width="128" height="128"
+                            fill="white" class="bi bi-pause-circle-fill hidden" viewBox="0 0 16 16">
+                            <path
+                                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.25 5C5.56 5 5 5.56 5 6.25v3.5a1.25 1.25 0 1 0 2.5 0v-3.5C7.5 5.56 6.94 5 6.25 5m3.5 0c-.69 0-1.25.56-1.25 1.25v3.5a1.25 1.25 0 1 0 2.5 0v-3.5C11 5.56 10.44 5 9.75 5" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div>
+                    <form action=""
+                        class="flex h-full flex-col justify-center rounded-card border border-white bg-linear-to-r from-brand-start to-brand-end p-6 sm:p-10">
+                        <h1 class="py-6 text-center text-2xl font-bold text-black">Оформление заказа</h1>
+                        <div class="my-2 flex flex-col">
+                            <label for="client_number" class="my-2">Номер телефона</label>
+                            <input type="tel" name="client_number" id="client_number"
+                                placeholder="+7 999-999-99-99"
+                                class="w-full rounded-xl border-0 px-2 py-2 placeholder:px-2 focus:outline-none focus:ring-2 focus:ring-black">
+                        </div>
+                        <div class="my-2 flex flex-col">
+                            <label for="client_email" class="my-2">Введите Email</label>
+                            <input type="email" name="client_email" id="client_email" placeholder="example@gmail.com"
+                                class="w-full rounded-xl border-0 px-2 py-2 placeholder:px-2 focus:outline-none focus:ring-2 focus:ring-black">
+                        </div>
+                        <div class="my-2 flex flex-col">
+                            <label for="client_address" class="my-2">Введите адрес</label>
+                            <input type="text" name="client_address" id="client_address" placeholder="ул. Иванова"
+                                class="w-full rounded-xl border-0 px-2 py-2 placeholder:px-2 focus:outline-none focus:ring-2 focus:ring-black">
+                        </div>
+                        <div class="my-2 flex">
+                            <input type="checkbox" name="privacy" id="privacy" class="me-2 size-5">
+                            <label for="privacy">Я согласен(на) с условиями обработки
+                                персональных данных</label>
+                        </div>
+                        <input type="submit" id="order_submit" value="Заказать"
+                            class="mt-2 w-full cursor-pointer rounded-xl border border-black bg-black py-3 text-white transition duration-200 hover:scale-105 hover:bg-white hover:text-black">
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/js.js"></script>
+</body>
+
+</html>

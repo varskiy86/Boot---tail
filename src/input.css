@@ -1,0 +1,36 @@
+/* Единственная точка входа Tailwind CSS.
+   Сборка: npm run build -> css/tailwind.css */
+
+@import "tailwindcss";
+
+/* Tailwind v4 автоматически ищет классы в проекте, но мы явно
+   ограничиваем область сканирования HTML-страницами и JS. */
+@source "../*.html";
+@source "../js/*.js";
+
+/* Шрифт проекта: локальный вариативный Unbounded */
+@font-face {
+  font-family: "Unbounded";
+  src: url("../fonts/Unbounded-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+/* Дизайн-токены проекта в терминах Tailwind.
+   После сборки доступны как обычные утилиты:
+   from-brand-start, to-brand-end, shadow-card, rounded-card, font-sans. */
+@theme {
+  --font-sans: "Unbounded", ui-sans-serif, system-ui, sans-serif;
+
+  --color-brand-start: #ff8566;
+  --color-brand-end: #feb47b;
+
+  --shadow-card: 10px 10px 5px rgb(200 200 200);
+  --radius-card: 20px;
+}
+
+@layer base {
+  body {
+    @apply bg-white font-sans text-black antialiased;
+  }
+}

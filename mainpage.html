@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CDWorld</title>
+    <link rel="stylesheet" href="css/tailwind.css">
+</head>
+
+<body>
+    <header class="fixed inset-x-0 top-0 z-10 bg-linear-to-r from-brand-start to-brand-end py-3">
+        <div class="container mx-auto px-4">
+            <nav class="flex flex-col items-center gap-2 sm:flex-row sm:justify-between">
+                <a href="mainpage.html"
+                    class="flex items-center text-black no-underline transition-transform duration-100 hover:scale-110">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="black" class="size-8"
+                        viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                        <path
+                            d="M10 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0M8 4a4 4 0 0 0-4 4 .5.5 0 0 1-1 0 5 5 0 0 1 5-5 .5.5 0 0 1 0 1m4.5 3.5a.5.5 0 0 1 .5.5 5 5 0 0 1-5 5 .5.5 0 0 1 0-1 4 4 0 0 0 4-4 .5.5 0 0 1 .5-.5" />
+                    </svg>
+                    <p class="mx-1 text-2xl">CDWorld</p>
+                </a>
+                <div class="flex items-center gap-4 sm:gap-6">
+                    <a href="#about" class="text-black no-underline transition-transform duration-100 hover:scale-110">О
+                        нас</a>
+                    <a href="#advantages"
+                        class="text-black no-underline transition-transform duration-100 hover:scale-110">Преимущества</a>
+                    <a href="#catalog"
+                        class="text-black no-underline transition-transform duration-100 hover:scale-110">Каталог</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4">
+        <section id="about" class="scroll-mt-24 pt-28 sm:scroll-mt-20 sm:pt-20">
+            <h1 class="text-center text-3xl font-bold text-black">О нас</h1>
+            <hr class="my-4 border-t-2 border-black">
+            <p class="text-justify">Добро пожаловать на CDWorld! Мы — команда страстных любителей музыки и
+                коллекционеров,
+                которая стремится подарить вам лучшие музыкальные находки в формате CD. Наша миссия — предоставить вам
+                широкий выбор качественных дисков, чтобы вы могли наслаждаться любимыми треками в высоком качестве и с
+                ностальгией по классике.</p>
+        </section>
+
+        <section id="advantages" class="scroll-mt-24 pt-12 sm:scroll-mt-20">
+            <h1 class="pt-2 text-center text-3xl font-bold text-black">Почему выбирают нас?</h1>
+            <hr class="my-4 border-t-2 border-black">
+            <div class="grid grid-cols-1 gap-4 pt-2 md:grid-cols-2 lg:grid-cols-4">
+                <div>
+                    <div
+                        class="flex h-full flex-col items-center justify-center rounded-card border-[3px] border-black p-3 text-center">
+                        <p class="p-3 font-bold">Большой ассортимент</p>
+                        <p class="p-3">Более тысячи музыкальных дисков различных жанров и исполнителей</p>
+                    </div>
+                </div>
+                <div>
+                    <div
+                        class="flex h-full flex-col items-center justify-center rounded-card border-[3px] border-black p-3 text-center">
+                        <p class="p-3 font-bold">Качество и оригинальность</p>
+                        <p class="p-3">Только лицензированные и оригинальные CD</p>
+                    </div>
+                </div>
+                <div>
+                    <div
+                        class="flex h-full flex-col items-center justify-center rounded-card border-[3px] border-black p-3 text-center">
+                        <p class="p-3 font-bold">Легкий и удобный сервис</p>
+                        <p class="p-3">Быстрая доставка и удобный поиск по каталогу</p>
+                    </div>
+                </div>
+                <div>
+                    <div
+                        class="flex h-full flex-col items-center justify-center rounded-card border-[3px] border-black p-3 text-center">
+                        <p class="p-3 font-bold">Поддержка клиентов</p>
+                        <p class="p-3">Мы всегда рады помочь и ответить на ваши вопросы</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="catalog" class="scroll-mt-24 pt-12 sm:scroll-mt-20">
+            <h1 class="text-center text-3xl font-bold text-black">Каталог</h1>
+            <hr class="my-4 border-t-2 border-black">
+            <div class="grid grid-cols-1 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
+                <a href="productpage.html"
+                    class="block rounded-2xl border border-black bg-white p-4 text-black no-underline shadow-card transition-transform duration-[250ms] hover:scale-105">
+                    <img src="img/Diamond Eyes.jpeg" alt="Обложка альбома Around the Fur"
+                        class="w-full rounded-card">
+                    <p>Around the Fur</p>
+                    <p>CD диск</p>
+                    <p>200₽</p>
+                    <button type="button"
+                        class="mt-2 w-full whitespace-nowrap rounded-[5px] border border-black bg-black p-2 text-white transition-colors hover:bg-white hover:text-black">В
+                        корзину</button>
+                </a>
+                <a href="productpage.html"
+                    class="block rounded-2xl border border-black bg-white p-4 text-black no-underline shadow-card transition-transform duration-[250ms] hover:scale-105">
+                    <img src="img/Diamond Eyes.jpeg" alt="Обложка альбома Around the Fur"
+                        class="w-full rounded-card">
+                    <p>Around the Fur</p>
+                    <p>CD диск</p>
+                    <p>200₽</p>
+                    <button type="button"
+                        class="mt-2 w-full whitespace-nowrap rounded-[5px] border border-black bg-black p-2 text-white transition-colors hover:bg-white hover:text-black">В
+                        корзину</button>
+                </a>
+                <a href="productpage.html"
+                    class="block rounded-2xl border border-black bg-white p-4 text-black no-underline shadow-card transition-transform duration-[250ms] hover:scale-105">
+                    <img src="img/Diamond Eyes.jpeg" alt="Обложка альбома Around the Fur"
+                        class="w-full rounded-card">
+                    <p>Around the Fur</p>
+                    <p>CD диск</p>
+                    <p>200₽</p>
+                    <button type="button"
+                        class="mt-2 w-full whitespace-nowrap rounded-[5px] border border-black bg-black p-2 text-white transition-colors hover:bg-white hover:text-black">В
+                        корзину</button>
+                </a>
+                <a href="productpage.html"
+                    class="block rounded-2xl border border-black bg-white p-4 text-black no-underline shadow-card transition-transform duration-[250ms] hover:scale-105">
+                    <img src="img/Diamond Eyes.jpeg" alt="Обложка альбома Around the Fur"
+                        class="w-full rounded-card">
+                    <p>Around the Fur</p>
+                    <p>CD диск</p>
+                    <p>200₽</p>
+                    <button type="button"
+                        class="mt-2 w-full whitespace-nowrap rounded-[5px] border border-black bg-black p-2 text-white transition-colors hover:bg-white hover:text-black">В
+                        корзину</button>
+                </a>
+                <a href="productpage.html"
+                    class="block rounded-2xl border border-black bg-white p-4 text-black no-underline shadow-card transition-transform duration-[250ms] hover:scale-105">
+                    <img src="img/Diamond Eyes.jpeg" alt="Обложка альбома Around the Fur"
+                        class="w-full rounded-card">
+                    <p>Around the Fur</p>
+                    <p>CD диск</p>
+                    <p>200₽</p>
+                    <button type="button"
+                        class="mt-2 w-full whitespace-nowrap rounded-[5px] border border-black bg-black p-2 text-white transition-colors hover:bg-white hover:text-black">В
+                        корзину</button>
+                </a>
+                <a href="productpage.html"
+                    class="block rounded-2xl border border-black bg-white p-4 text-black no-underline shadow-card transition-transform duration-[250ms] hover:scale-105">
+                    <img src="img/Diamond Eyes.jpeg" alt="Обложка альбома Around the Fur"
+                        class="w-full rounded-card">
+                    <p>Around the Fur</p>
+                    <p>CD диск</p>
+                    <p>200₽</p>
+                    <button type="button"
+                        class="mt-2 w-full whitespace-nowrap rounded-[5px] border border-black bg-black p-2 text-white transition-colors hover:bg-white hover:text-black">В
+                        корзину</button>
+                </a>
+                <a href="productpage.html"
+                    class="block rounded-2xl border border-black bg-white p-4 text-black no-underline shadow-card transition-transform duration-[250ms] hover:scale-105">
+                    <img src="img/Diamond Eyes.jpeg" alt="Обложка альбома Around the Fur"
+                        class="w-full rounded-card">
+                    <p>Around the Fur</p>
+                    <p>CD диск</p>
+                    <p>200₽</p>
+                    <button type="button"
+                        class="mt-2 w-full whitespace-nowrap rounded-[5px] border border-black bg-black p-2 text-white transition-colors hover:bg-white hover:text-black">В
+                        корзину</button>
+                </a>
+                <a href="productpage.html"
+                    class="block rounded-2xl border border-black bg-white p-4 text-black no-underline shadow-card transition-transform duration-[250ms] hover:scale-105">
+                    <img src="img/Diamond Eyes.jpeg" alt="Обложка альбома Around the Fur"
+                        class="w-full rounded-card">
+                    <p>Around the Fur</p>
+                    <p>CD диск</p>
+                    <p>200₽</p>
+                    <button type="button"
+                        class="mt-2 w-full whitespace-nowrap rounded-[5px] border border-black bg-black p-2 text-white transition-colors hover:bg-white hover:text-black">В
+                        корзину</button>
+                </a>
+                <a href="productpage.html"
+                    class="block rounded-2xl border border-black bg-white p-4 text-black no-underline shadow-card transition-transform duration-[250ms] hover:scale-105">
+                    <img src="img/Diamond Eyes.jpeg" alt="Обложка альбома Around the Fur"
+                        class="w-full rounded-card">
+                    <p>Around the Fur</p>
+                    <p>CD диск</p>
+                    <p>200₽</p>
+                    <button type="button"
+                        class="mt-2 w-full whitespace-nowrap rounded-[5px] border border-black bg-black p-2 text-white transition-colors hover:bg-white hover:text-black">В
+                        корзину</button>
+                </a>
+                <a href="productpage.html"
+                    class="block rounded-2xl border border-black bg-white p-4 text-black no-underline shadow-card transition-transform duration-[250ms] hover:scale-105">
+                    <img src="img/Diamond Eyes.jpeg" alt="Обложка альбома Around the Fur"
+                        class="w-full rounded-card">
+                    <p>Around the Fur</p>
+                    <p>CD диск</p>
+                    <p>200₽</p>
+                    <button type="button"
+                        class="mt-2 w-full whitespace-nowrap rounded-[5px] border border-black bg-black p-2 text-white transition-colors hover:bg-white hover:text-black">В
+                        корзину</button>
+                </a>
+                <a href="productpage.html"
+                    class="block rounded-2xl border border-black bg-white p-4 text-black no-underline shadow-card transition-transform duration-[250ms] hover:scale-105">
+                    <img src="img/Diamond Eyes.jpeg" alt="Обложка альбома Around the Fur"
+                        class="w-full rounded-card">
+                    <p>Around the Fur</p>
+                    <p>CD диск</p>
+                    <p>200₽</p>
+                    <button type="button"
+                        class="mt-2 w-full whitespace-nowrap rounded-[5px] border border-black bg-black p-2 text-white transition-colors hover:bg-white hover:text-black">В
+                        корзину</button>
+                </a>
+                <a href="productpage.html"
+                    class="block rounded-2xl border border-black bg-white p-4 text-black no-underline shadow-card transition-transform duration-[250ms] hover:scale-105">
+                    <img src="img/Diamond Eyes.jpeg" alt="Обложка альбома Around the Fur"
+                        class="w-full rounded-card">
+                    <p>Around the Fur</p>
+                    <p>CD диск</p>
+                    <p>200₽</p>
+                    <button type="button"
+                        class="mt-2 w-full whitespace-nowrap rounded-[5px] border border-black bg-black p-2 text-white transition-colors hover:bg-white hover:text-black">В
+                        корзину</button>
+                </a>
+            </div>
+            <hr class="my-4 border-t-2 border-black">
+        </section>
+    </main>
+
+    <footer class="py-6">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col items-start justify-between gap-6 sm:flex-row sm:items-center">
+                <div class="flex">
+                    <a href="https://vk.com" class="mx-1 inline-block transition-transform duration-[250ms] hover:scale-110"
+                        aria-label="ВКонтакте">
+                        <svg class="size-8" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0 23.04C0 12.1788 0 6.74826 3.37413 3.37413C6.74826 0 12.1788 0 23.04 0H24.96C35.8212 0 41.2517 0 44.6259 3.37413C48 6.74826 48 12.1788 48 23.04V24.96C48 35.8212 48 41.2517 44.6259 44.6259C41.2517 48 35.8212 48 24.96 48H23.04C12.1788 48 6.74826 48 3.37413 44.6259C0 41.2517 0 35.8212 0 24.96V23.04Z"
+                                fill="black" />
+                            <path
+                                d="M25.54 34.5801C14.6 34.5801 8.3601 27.0801 8.1001 14.6001H13.5801C13.7601 23.7601 17.8 27.6401 21 28.4401V14.6001H26.1602V22.5001C29.3202 22.1601 32.6398 18.5601 33.7598 14.6001H38.9199C38.0599 19.4801 34.4599 23.0801 31.8999 24.5601C34.4599 25.7601 38.5601 28.9001 40.1201 34.5801H34.4399C33.2199 30.7801 30.1802 27.8401 26.1602 27.4401V34.5801H25.54Z"
+                                fill="white" />
+                        </svg>
+                    </a>
+                    <a href="https://telegram.org"
+                        class="mx-1 inline-block transition-transform duration-[250ms] hover:scale-110"
+                        aria-label="Telegram">
+                        <svg class="size-8" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            viewBox="0 0 240.1 240.1">
+                            <linearGradient id="Oval_1_" gradientUnits="userSpaceOnUse" x1="-838.041" y1="660.581"
+                                x2="-838.041" y2="660.3427" gradientTransform="matrix(1000 0 0 -1000 838161 660581)">
+                                <stop offset="0" style="stop-color:black" />
+                            </linearGradient>
+                            <circle fill-rule="evenodd" clip-rule="evenodd" fill="url(#Oval_1_)" cx="120.1" cy="120.1"
+                                r="120.1" />
+                            <path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF"
+                                d="M54.3,118.8c35-15.2,58.3-25.3,70-30.2 c33.3-13.9,40.3-16.3,44.8-16.4c1,0,3.2,0.2,4.7,1.4c1.2,1,1.5,2.3,1.7,3.3s0.4,3.1,0.2,4.7c-1.8,19-9.6,65.1-13.6,86.3 c-1.7,9-5,12-8.2,12.3c-7,0.6-12.3-4.6-19-9c-10.6-6.9-16.5-11.2-26.8-18c-11.9-7.8-4.2-12.1,2.6-19.1c1.8-1.8,32.5-29.8,33.1-32.3 c0.1-0.3,0.1-1.5-0.6-2.1c-0.7-0.6-1.7-0.4-2.5-0.2c-1.1,0.2-17.9,11.4-50.6,33.5c-4.8,3.3-9.1,4.9-13,4.8 c-4.3-0.1-12.5-2.4-18.7-4.4c-7.5-2.4-13.5-3.7-13-7.9C45.7,123.3,48.7,121.1,54.3,118.8z" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="flex flex-col gap-6">
+                    <a href="#about" class="text-black no-underline transition-transform duration-100 hover:scale-110">О
+                        нас</a>
+                    <a href="#advantages"
+                        class="text-black no-underline transition-transform duration-100 hover:scale-110">Преимущества</a>
+                    <a href="#catalog"
+                        class="text-black no-underline transition-transform duration-100 hover:scale-110">Каталог</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

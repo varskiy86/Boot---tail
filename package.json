@@ -1,0 +1,14 @@
+{
+  "name": "cdworld",
+  "version": "1.0.0",
+  "private": true,
+  "description": "CDWorld — статический сайт магазина CD-дисков на Tailwind CSS",
+  "scripts": {
+    "dev": "tailwindcss -i ./src/input.css -o ./css/tailwind.css --watch",
+    "build": "tailwindcss -i ./src/input.css -o ./css/tailwind.css --minify"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.4",
+    "tailwindcss": "^4.3.4"
+  }
+}
